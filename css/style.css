@@ -11,6 +11,7 @@
   --bg-dark-gray-color: #2f303a;
   --bg-light-gray-color: #f5f4fa;
   --btn-hover-color: #188ce8;
+  --border-color: #ececec;
 }
 
 /* BG Colors */
@@ -197,7 +198,7 @@ img {
 
 /* HEADER */
 .header {
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid var(--border-color);
 }
 
 /* Pagination */
@@ -284,8 +285,9 @@ img {
 
 /* TEAM */
 .team-item-block {
-  width: 270px;
-  height: 108px;
+  /* width: 270px;
+  height: 108px; */
+  padding: 30px 5px;
   background-color: var(--main_white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -393,6 +395,8 @@ img {
   color: var(--main-black-color);
   border-width: 0ch;
   cursor: pointer;
+  padding: 6px 22px;
+  border-radius: 4px;
 }
 
 .portfolio-button:hover,
@@ -408,14 +412,23 @@ img {
 
 /* PORTFOLIO */
 .portfolio-item-block {
-  width: 370px;
-  height: 110px;
+  /* width: 370px;
+  height: 110px; */
+  padding: 20px 5px;
   background-color: var(--main_white-color);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  border-bottom: 1px solid #ececec;
-  border-left: 1px solid #ececec;
-  border-right: 1px solid #ececec;
+  border-bottom: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+}
+
+.portfolio-btn-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  gap: 8px;
+
 }
